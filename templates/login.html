@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
+ 	<meta charset="UTF-8">
+ 	<title>Login</title>
 </head>
 <body>
-
 	{% if not_registered %}
 		<p>Bro , user not found</p>
 	{% endif %}
@@ -13,19 +12,19 @@
 		<p>Enter the data , PLEASE</p>
 	{% endif %}
 
-    <form action="" method="post">
-        <p>
-	    <label for="username">Username</label>
-	    <input type="text" name="username">
+ 	<form action="" method="post">
+ 	<p>
+ 		<label for="username">Username</label>
+		<input type="text" name="username">
 	</p>
 	<p>
-	    <label for="password">Password</label>
-	    <input type="password" name="password">
+ 		<label for="password">Password</label>
+ 		<input type="password" name="password">
 	</p>
 	<p>
-	    <input type="submit">
+ 		<input type="submit" value="login" name="login">
+ 		<input type="submit" value="registration" name="registration">
 	</p>
-    </form>
-
+	</form>
 </body>
 </html>
